@@ -20,6 +20,62 @@ Alongside the platform, a Sanctum API automatically provisions credentials for t
 
 ---
 
+## Business Problem
+
+Professional institutions that manage regulated members across multiple regions often rely on fragmented spreadsheets, manual records, paper-based procedures and disconnected communication channels.
+
+This creates operational challenges:
+
+* inconsistent member records;
+* limited visibility across regions and courts;
+* weak access control between national and regional administrators;
+* difficult tracking of procedures, acts and complaints;
+* lack of centralized dashboards and institutional KPIs;
+* poor integration between back-office governance and field/mobile operations.
+
+Governance Platform addresses this by centralizing institutional records, regional administration, court structures, member profiles, procedures, complaints and mobile access provisioning in one secure Laravel-based back-office.
+
+---
+
+## My Role
+
+I designed and developed Governance Platform as a full institutional back-office system.
+
+My work included:
+
+* designing the Laravel/Filament application architecture;
+* implementing the core data model for regions, courts, members, acts and complaints;
+* building Filament resources, dashboards and administrative workflows;
+* structuring role-based access control for national and regional administration;
+* preparing Arabic RTL interfaces for institutional users;
+* integrating Laravel Sanctum for mobile/API access;
+* designing the user provisioning logic connected to NOUR Mobile;
+* preparing the platform as the administrative backbone of the broader WITI ecosystem.
+
+---
+
+## Security & Access Model
+
+Governance Platform uses a role-based access model designed for institutional environments.
+
+The platform separates access between:
+
+* **Super Admin** — national-level administration and full platform visibility;
+* **Regional Admin** — access limited to assigned regional scope;
+* **Huissier / Member User** — controlled access for mobile and field integration.
+
+Security and access decisions include:
+
+* role-based permissions;
+* regional data scoping;
+* Laravel policies and Filament access controls;
+* Sanctum-based API authentication;
+* automatic user provisioning for mobile access;
+* separation between administrative back-office and field/mobile workflows;
+* portfolio-safe public repository with production secrets and private operational data excluded.
+
+---
+
 ## Dashboard & Analytics
 
 | KPI Overview | Account Widget |
