@@ -1,9 +1,20 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "samirchatwiti/governance-platform",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "Institutional governance platform built with Laravel, Filament, RBAC, Sanctum API and Arabic RTL support.",
+    "keywords": [
+        "laravel",
+        "filament",
+        "rbac",
+        "sanctum",
+        "legaltech",
+        "govtech",
+        "governance",
+        "institutional-platform",
+        "arabic-rtl",
+        "judicial-management"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
