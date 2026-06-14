@@ -1,0 +1,35 @@
+name: Laravel CI (WITI Governance)
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  laravel-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+        with:
+          php-version: '8.3'
+          extensions: mbstring, intl, gd, zip, bcmath, pdo_sqlite, pdo_mysql
+          coverage: none
+
+      - uses: actions/checkout@v4
+
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+      - name: Install Composer dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+      - name: Generate application key
+        run: php artisan key:generate
+
+      - name: Set storage permissions
+        run: chmod -R 777 storage bootstrap/cache
+
+      - name: Run tests
+        run: vendor/bin/phpunit
