@@ -1,14 +1,12 @@
-# Governance Platform — Institutional Management for Judicial Officers
+# Governance Platform — Institutional Operations for Judicial Officers
 
-[![Laravel CI](https://github.com/sanadidari/governance-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/sanadidari/governance-platform/actions/workflows/ci.yml)
-![Laravel: 12](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+Institutional governance platform designed to support the structured management of judicial officers, courts, professional records and operational workflows across multiple regions.
 
-**National platform for managing the bailiff profession in Morocco**, built for the [National Council of Bailiffs of Justice](https://sanadidari.com/witi/gov). Part of the **NOUR** unified judicial ecosystem.
+Built with Laravel, Filament, role-based access control and Arabic RTL support, the platform centralizes member administration, judicial acts, court assignments, dashboards, reporting and secure API integrations.
 
-🔗 [Live Portal](https://sanadidari.com/witi/governance) · [NOUR Mobile App](https://github.com/sanadidari/nour-mobile) · [WITI Ecosystem](https://sanadidari.com/witi)
+The solution also integrates with the NOUR mobile application to support coordinated institutional and field workflows.
 
----
+**Stack:** Laravel 12 · Filament 3 · MySQL · Sanctum · Arabic RTL UI
 
 ## Overview
 
