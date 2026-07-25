@@ -10,13 +10,13 @@ The solution also integrates with the NOUR mobile application to support coordin
 
 ## Overview
 
-This platform provides the institutional back-office for **huissiers de justice** (judicial officers) across Morocco's 12 regions and 73 courts. It was built following a convention between **Sanadidari SARL** and the **Conseil National des Huissiers de Justice du Maroc**.
+This platform provides an institutional back-office for managing judicial officers, courts, professional records and structured operational workflows.
 
-Alongside the platform, a Sanctum API automatically provisions credentials for the **NOUR** mobile app — so every registered huissier gets simultaneous access to both the institutional dashboard and the field certification app (zero-trust proof of presence via QR cryptography).
+It centralizes member administration, court assignments, judicial acts, dashboards, reporting and role-based access within an Arabic RTL environment.
 
-**Stack:** Laravel 12 · Filament 3 · MySQL · Sanctum · Arabic RTL UI
+A Sanctum API supports secure integration with the NOUR mobile application, enabling coordinated institutional and field workflows.
 
----
+The repository presents the platform’s foundational architecture, data model and principal operational modules developed for judicial-sector digital modernization.
 
 ## Business Problem
 
